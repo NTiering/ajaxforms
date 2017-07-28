@@ -1,0 +1,71 @@
+﻿<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+<script type="text/javascript" src="../src/ajaxform.js" ></script>
+<form name="catwebformform46465" method="post" enctype="multipart/form-data" 
+      action="https://requestb.in/svk8dnsv" id="frm1">
+    <span class="req">*</span> Required
+    <table class="webform" cellspacing="0" cellpadding="2" border="0">
+        <tr>
+            <td>
+                <label for="Title">Title</label>
+                <br />
+                <select name="Title" id="Title" class="cat_dropdown_smaller">
+                    <option value="317601">DR</option>
+                    <option value="317600">MISS</option>
+                    <option value="317597" selected="selected">MR</option>
+                    <option value="317598">MRS</option>
+                    <option value="317599">MS</option>
+                    <option value="435168">sasasa</option>
+                    <option value="435179">sdad</option>
+                    <option value="435166">vbvbvb</option>
+                    <option value="435167">ytytyty</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="FirstName">
+                    First Name <span class="req">*</span>
+                </label>
+                <br />
+                <input type="text" name="FirstName" id="FirstName" class="cat_textbox" maxlength="255" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="LastName">
+                    Last Name <span class="req">*</span>
+                </label>
+                <br />
+                <input type="text" name="LastName" id="LastName" class="cat_textbox" maxlength="255" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="EmailAddress">
+                    Email Address <span class="req">*</span>
+                </label>
+                <br />
+                <input type="text" name="EmailAddress" id="EmailAddress" class="cat_textbox" maxlength="255" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Submit" id="catwebformbutton" />
+            </td>
+        </tr>
+    </table>
+    
+    <script type="text/javascript">
+
+        var f = ajaxForm("frm1"); // supply the id of this form 
+        f.onFormStart(function (f, d) { // form , data
+            alert("starting");
+        })
+
+        f.onFormEnd(function (r, f, d) { // response, form , data
+            alert("done! ");
+            console.log(r);
+        })
+
+    </script>
+</form>
